@@ -1,0 +1,630 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY p1 "#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="/#"
+     xml:base="/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:p1="#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="file:/"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- file:/#hasUid -->
+
+    <owl:ObjectProperty rdf:about="file:/#hasUid">
+        <rdfs:domain rdf:resource="file:/#project"/>
+        <rdfs:range rdf:resource="file:/project/#uid"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- file:/#alpha -->
+
+    <owl:Class rdf:about="file:/#alpha">
+        <rdfs:subClassOf rdf:resource="file:/#ui"/>
+    </owl:Class>
+    
+
+
+    <!-- file:/#backgroundColor -->
+
+    <owl:Class rdf:about="file:/#backgroundColor">
+        <rdfs:subClassOf rdf:resource="file:/#scene"/>
+    </owl:Class>
+    
+
+
+    <!-- file:/#belief -->
+
+    <owl:Class rdf:about="file:/#belief">
+        <rdfs:subClassOf rdf:resource="file:/#library"/>
+    </owl:Class>
+    
+
+
+    <!-- file:/#cover -->
+
+    <owl:Class rdf:about="file:/#cover">
+        <rdfs:subClassOf rdf:resource="file:/#project"/>
+    </owl:Class>
+    
+
+
+    <!-- file:/#data -->
+
+    <owl:Class rdf:about="file:/#data">
+        <rdfs:subClassOf rdf:resource="file:/#unit"/>
+    </owl:Class>
+    
+
+
+    <!-- file:/#deactiveAction -->
+
+    <owl:Class rdf:about="file:/#deactiveAction">
+        <rdfs:subClassOf rdf:resource="file:/#project"/>
+    </owl:Class>
+    
+
+
+    <!-- file:/#debug -->
+
+    <owl:Class rdf:about="file:/#debug">
+        <rdfs:subClassOf rdf:resource="file:/#project"/>
+    </owl:Class>
+    
+
+
+    <!-- file:/#delayEnter -->
+
+    <owl:Class rdf:about="file:/#delayEnter">
+        <rdfs:subClassOf rdf:resource="file:/#play"/>
+    </owl:Class>
+    
+
+
+    <!-- file:/#delayExit -->
+
+    <owl:Class rdf:about="file:/#delayExit">
+        <rdfs:subClassOf rdf:resource="file:/#play"/>
+    </owl:Class>
+    
+
+
+    <!-- file:/#editedTime -->
+
+    <owl:Class rdf:about="file:/#editedTime">
+        <rdfs:subClassOf rdf:resource="file:/#project"/>
+    </owl:Class>
+    
+
+
+    <!-- file:/#en_US -->
+
+    <owl:Class rdf:about="file:/#en_US">
+        <rdfs:subClassOf rdf:resource="file:/#source"/>
+    </owl:Class>
+    
+
+
+    <!-- file:/#event -->
+
+    <owl:Class rdf:about="file:/#event">
+        <rdfs:subClassOf rdf:resource="file:/#scene"/>
+        <rdfs:subClassOf rdf:resource="file:/#ui"/>
+    </owl:Class>
+    
+
+
+    <!-- file:/#flow -->
+
+    <owl:Class rdf:about="file:/#flow"/>
+    
+
+
+    <!-- file:/#global -->
+
+    <owl:Class rdf:about="file:/#global">
+        <rdfs:subClassOf rdf:resource="file:/#play"/>
+    </owl:Class>
+    
+
+
+    <!-- file:/#goto -->
+
+    <owl:Class rdf:about="file:/#goto">
+        <rdfs:subClassOf rdf:resource="file:/#play"/>
+        <rdfs:subClassOf rdf:resource="file:/flow/units/unit/datas/#event"/>
+    </owl:Class>
+    
+
+
+    <!-- file:/#height -->
+
+    <owl:Class rdf:about="file:/#height">
+        <rdfs:subClassOf rdf:resource="file:/#ui"/>
+    </owl:Class>
+    
+
+
+    <!-- file:/#hideEffect -->
+
+    <owl:Class rdf:about="file:/#hideEffect">
+        <rdfs:subClassOf rdf:resource="file:/#scene"/>
+    </owl:Class>
+    
+
+
+    <!-- file:/#id -->
+
+    <owl:Class rdf:about="file:/#id">
+        <rdfs:subClassOf rdf:resource="file:/#image"/>
+        <rdfs:subClassOf rdf:resource="file:/#play"/>
+        <rdfs:subClassOf rdf:resource="file:/#unit"/>
+        <rdfs:subClassOf rdf:resource="file:/flow/units/unit/datas/#event"/>
+    </owl:Class>
+    
+
+
+    <!-- file:/#image -->
+
+    <owl:Class rdf:about="file:/#image">
+        <rdfs:subClassOf rdf:resource="file:/#library"/>
+    </owl:Class>
+    
+
+
+    <!-- file:/#init -->
+
+    <owl:Class rdf:about="file:/#init">
+        <rdfs:subClassOf rdf:resource="file:/#flow"/>
+    </owl:Class>
+    
+
+
+    <!-- file:/#initScene -->
+
+    <owl:Class rdf:about="file:/#initScene">
+        <rdfs:subClassOf rdf:resource="file:/#project"/>
+    </owl:Class>
+    
+
+
+    <!-- file:/#layer -->
+
+    <owl:Class rdf:about="file:/#layer">
+        <rdfs:subClassOf rdf:resource="file:/#ui"/>
+    </owl:Class>
+    
+
+
+    <!-- file:/#layout -->
+
+    <owl:Class rdf:about="file:/#layout"/>
+    
+
+
+    <!-- file:/#library -->
+
+    <owl:Class rdf:about="file:/#library"/>
+    
+
+
+    <!-- file:/#mouseEnable -->
+
+    <owl:Class rdf:about="file:/#mouseEnable">
+        <rdfs:subClassOf rdf:resource="file:/#ui"/>
+    </owl:Class>
+    
+
+
+    <!-- file:/#name -->
+
+    <owl:Class rdf:about="file:/#name">
+        <rdfs:subClassOf rdf:resource="file:/#ui"/>
+    </owl:Class>
+    
+
+
+    <!-- file:/#orientation -->
+
+    <owl:Class rdf:about="file:/#orientation">
+        <rdfs:subClassOf rdf:resource="file:/#project"/>
+    </owl:Class>
+    
+
+
+    <!-- file:/#parameter -->
+
+    <owl:Class rdf:about="file:/#parameter">
+        <rdfs:subClassOf rdf:resource="file:/#play"/>
+    </owl:Class>
+    
+
+
+    <!-- file:/#play -->
+
+    <owl:Class rdf:about="file:/#play">
+        <rdfs:subClassOf rdf:resource="file:/#data"/>
+    </owl:Class>
+    
+
+
+    <!-- file:/#posx -->
+
+    <owl:Class rdf:about="file:/#posx">
+        <rdfs:subClassOf rdf:resource="file:/#play"/>
+        <rdfs:subClassOf rdf:resource="file:/flow/units/unit/datas/#event"/>
+    </owl:Class>
+    
+
+
+    <!-- file:/#posy -->
+
+    <owl:Class rdf:about="file:/#posy">
+        <rdfs:subClassOf rdf:resource="file:/#play"/>
+        <rdfs:subClassOf rdf:resource="file:/flow/units/unit/datas/#event"/>
+    </owl:Class>
+    
+
+
+    <!-- file:/#project -->
+
+    <owl:Class rdf:about="file:/#project"/>
+    
+
+
+    <!-- file:/#rotation -->
+
+    <owl:Class rdf:about="file:/#rotation">
+        <rdfs:subClassOf rdf:resource="file:/#ui"/>
+    </owl:Class>
+    
+
+
+    <!-- file:/#scene -->
+
+    <owl:Class rdf:about="file:/#scene">
+        <rdfs:subClassOf rdf:resource="file:/#layout"/>
+    </owl:Class>
+    
+
+
+    <!-- file:/#showEffect -->
+
+    <owl:Class rdf:about="file:/#showEffect">
+        <rdfs:subClassOf rdf:resource="file:/#scene"/>
+    </owl:Class>
+    
+
+
+    <!-- file:/#sound -->
+
+    <owl:Class rdf:about="file:/#sound">
+        <rdfs:subClassOf rdf:resource="file:/#library"/>
+    </owl:Class>
+    
+
+
+    <!-- file:/#source -->
+
+    <owl:Class rdf:about="file:/#source">
+        <rdfs:subClassOf rdf:resource="file:/#image"/>
+        <rdfs:subClassOf rdf:resource="file:/flow/units/unit/datas/#event"/>
+    </owl:Class>
+    
+
+
+    <!-- file:/#sourceRef -->
+
+    <owl:Class rdf:about="file:/#sourceRef">
+        <rdfs:subClassOf rdf:resource="file:/#ui"/>
+    </owl:Class>
+    
+
+
+    <!-- file:/#string -->
+
+    <owl:Class rdf:about="file:/#string">
+        <rdfs:subClassOf rdf:resource="file:/#library"/>
+    </owl:Class>
+    
+
+
+    <!-- file:/#type -->
+
+    <owl:Class rdf:about="file:/#type">
+        <rdfs:subClassOf rdf:resource="file:/#play"/>
+        <rdfs:subClassOf rdf:resource="file:/#ui"/>
+        <rdfs:subClassOf rdf:resource="file:/flow/units/unit/datas/#event"/>
+    </owl:Class>
+    
+
+
+    <!-- file:/#ui -->
+
+    <owl:Class rdf:about="file:/#ui">
+        <rdfs:subClassOf rdf:resource="file:/#scene"/>
+    </owl:Class>
+    
+
+
+    <!-- file:/#unit -->
+
+    <owl:Class rdf:about="file:/#unit">
+        <rdfs:subClassOf rdf:resource="file:/#units"/>
+    </owl:Class>
+    
+
+
+    <!-- file:/#units -->
+
+    <owl:Class rdf:about="file:/#units">
+        <rdfs:subClassOf rdf:resource="file:/#flow"/>
+    </owl:Class>
+    
+
+
+    <!-- file:/#version -->
+
+    <owl:Class rdf:about="file:/#version">
+        <rdfs:subClassOf rdf:resource="file:/#project"/>
+    </owl:Class>
+    
+
+
+    <!-- file:/#width -->
+
+    <owl:Class rdf:about="file:/#width">
+        <rdfs:subClassOf rdf:resource="file:/#ui"/>
+    </owl:Class>
+    
+
+
+    <!-- file:/#x -->
+
+    <owl:Class rdf:about="file:/#x">
+        <rdfs:subClassOf rdf:resource="file:/#ui"/>
+    </owl:Class>
+    
+
+
+    <!-- file:/#y -->
+
+    <owl:Class rdf:about="file:/#y">
+        <rdfs:subClassOf rdf:resource="file:/#ui"/>
+    </owl:Class>
+    
+
+
+    <!-- file:/#zh_TW -->
+
+    <owl:Class rdf:about="file:/#zh_TW">
+        <rdfs:subClassOf rdf:resource="file:/#source"/>
+    </owl:Class>
+    
+
+
+    <!-- file:/flow/units/unit/datas/#event -->
+
+    <owl:Class rdf:about="file:/flow/units/unit/datas/#event">
+        <rdfs:subClassOf rdf:resource="file:/#data"/>
+    </owl:Class>
+    
+
+
+    <!-- file:/goto/#id -->
+
+    <owl:Class rdf:about="file:/goto/#id">
+        <rdfs:subClassOf rdf:resource="file:/#goto"/>
+    </owl:Class>
+    
+
+
+    <!-- file:/project/#description -->
+
+    <owl:Class rdf:about="file:/project/#description">
+        <rdfs:subClassOf rdf:resource="file:/#project"/>
+    </owl:Class>
+    
+
+
+    <!-- file:/project/#height -->
+
+    <owl:Class rdf:about="file:/project/#height">
+        <rdfs:subClassOf rdf:resource="file:/#project"/>
+    </owl:Class>
+    
+
+
+    <!-- file:/project/#name -->
+
+    <owl:Class rdf:about="file:/project/#name">
+        <rdfs:subClassOf rdf:resource="file:/#project"/>
+    </owl:Class>
+    
+
+
+    <!-- file:/project/#uid -->
+
+    <owl:Class rdf:about="file:/project/#uid">
+        <rdfs:subClassOf rdf:resource="file:/#project"/>
+    </owl:Class>
+    
+
+
+    <!-- file:/project/#width -->
+
+    <owl:Class rdf:about="file:/project/#width">
+        <rdfs:subClassOf rdf:resource="file:/#project"/>
+    </owl:Class>
+    
+
+
+    <!-- file:/scene/#name -->
+
+    <owl:Class rdf:about="file:/scene/#name">
+        <rdfs:subClassOf rdf:resource="file:/#scene"/>
+    </owl:Class>
+    
+
+
+    <!-- file:/scene/ui/#id -->
+
+    <owl:Class rdf:about="file:/scene/ui/#id">
+        <rdfs:subClassOf rdf:resource="file:/#ui"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- file:/#0.0.1 -->
+
+    <owl:NamedIndividual rdf:about="file:/#0.0.1">
+        <rdf:type rdf:resource="file:/#version"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- file:/#1280 -->
+
+    <owl:NamedIndividual rdf:about="file:/#1280">
+        <rdf:type rdf:resource="file:/project/#height"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- file:/#1ff93c90-8d10-11e3-8099-97c097dab8f6 -->
+
+    <owl:NamedIndividual rdf:about="file:/#1ff93c90-8d10-11e3-8099-97c097dab8f6">
+        <rdf:type rdf:resource="file:/project/#uid"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- file:/#2014.01.01 -->
+
+    <owl:NamedIndividual rdf:about="file:/#2014.01.01">
+        <rdf:type rdf:resource="file:/#editedTime"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- file:/#800 -->
+
+    <owl:NamedIndividual rdf:about="file:/#800">
+        <rdf:type rdf:resource="file:/project/#width"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- file:/#Painter -->
+
+    <owl:NamedIndividual rdf:about="file:/#Painter">
+        <rdf:type rdf:resource="file:/project/#name"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- file:/#false -->
+
+    <owl:NamedIndividual rdf:about="file:/#false">
+        <rdf:type rdf:resource="file:/#debug"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- file:/#landscape -->
+
+    <owl:NamedIndividual rdf:about="file:/#landscape">
+        <rdf:type rdf:resource="file:/#orientation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- file:/#project001.png -->
+
+    <owl:NamedIndividual rdf:about="file:/#project001.png">
+        <rdf:type rdf:resource="file:/#cover"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- file:/#quit -->
+
+    <owl:NamedIndividual rdf:about="file:/#quit">
+        <rdf:type rdf:resource="file:/#deactiveAction"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- file:/#scene1 -->
+
+    <owl:NamedIndividual rdf:about="file:/#scene1">
+        <rdf:type rdf:resource="file:/#initScene"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- file:/#this_is_an_amazing_painting_game_for_kid -->
+
+    <owl:NamedIndividual rdf:about="file:/#this_is_an_amazing_painting_game_for_kid">
+        <rdf:type rdf:resource="file:/project/#description"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- file:/library/belief/#2014.01.01 -->
+
+    <owl:NamedIndividual rdf:about="file:/library/belief/#2014.01.01">
+        <rdf:type rdf:resource="file:/#belief"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+
